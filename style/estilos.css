@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
   
+  
   ul, li {
     list-style: none !important;
   }
@@ -126,13 +127,26 @@
   }
 }
 
+
 @media (max-width: 993px) {
   #cartita {
-      width: 11rem;
-      height: 20rem;
+    width: 11rem;
+    height: 20rem;
   }
   .card-text{
     display: none;
+  }
+}
+
+@media (max-width: 765px) {
+  #cartita {
+      width: 16rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #cartita {
+      width: 24rem;
   }
 }
 
