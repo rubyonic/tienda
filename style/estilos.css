@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  ul, li {
+    list-style: none !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  body {
+    cursor: url('../images/arrow.cur'), auto;
+  }
+  
+
+
+  @font-face {
+      font-family: "selima";
+      src: url("../fuentes/Selima\ .ttf") format("woff");
+    }
+
+    @font-face {
+    font-family: "pink";
+    src: url("../fuentes/Pinkline.otf") format("woff");
+    }
+    
+    @font-face {
+        font-family: "lov";
+        src: url("../fuentes/LOVELY.otf") format("woff");
+        }
+
+    @font-face {
+        font-family: "fran";
+        src: url("../fuentes/LibreBaskerville-Regular.ttf") format("woff");
+        }
+#logo{
+    font-family: "selima";
+    color: #DE57C7;
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px #000, -2px -2px 4px #000, 2px -2px 4px #000, -2px 2px 4px #000;
+}
+  body {
+    background: 
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.956), #f8c8d3cc),
+      url(../images/10236504.png);
+    background-position: center; 
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .nav-link{
+    font-family: "lov";
+    font-size: 23px !important;
+    margin-left: 30px;
+    color: #DE57C7!important;
+   
+
+  }
+
+  .foot{
+    font-family: "lov";
+    font-size: 20px !important;
+    color: #DE57C7!important;
+  }
+
+  .titdentro{
+    font-family: "lov";
+    font-size: 40px !important;
+    color:  #DE57C7!important;
+  }
+
+  .nav-link a{
+    font-size: 100px;
+  }
+    h1{
+    font-family: "lov";
+    font-size: 60px !important;
+    color: #DE57C7!important;
+
+    }
+
+  .breadcrumb-item{
+    color: #DE57C7!important;
+  }
+  .breadcrumb-item a{
+    color: #000000!important;
+  }
+
+  .breadcrumb-item a:hover{
+    color: #000000!important;
+    border-bottom: 1px solid #DE57C7;
+  }
+
+#cartita{
+    background-color: #FBFBFB;
+    width: 19rem;
+    border: 1px solid rgba(222, 87, 200, 0.843); 
+    height: 30.5rem;
+    
+}
+
+.dropdown-menu {
+  border: 2px solid #de57c8 !important;
+}
+
+#iframe{
+  border: 2px solid #de57c8 !important;
+  border-radius: 20px;
+}
+
+#lapis{
+  width: 250px;
+}
+
+#carru:hover{
+  box-shadow: 0 0 15px 5px #de57c85c; 
+}
+
+
+@media (max-width: 1400px) {
+  #cartita {
+      width: 15rem;
+  }
+}
+
+@media (max-width: 993px) {
+  #cartita {
+      width: 11rem;
+      height: 20rem;
+  }
+  .card-text{
+    display: none;
+  }
+}
+
+.card-img-top {
+    width: 100%;       
+    height: 200px;       
+    object-fit: cover;   
+    object-position: center;
+  }
+  .card {
+    position: relative;
+    overflow: hidden; 
+    transition: all 0.3s ease;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .front-image, .back-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: transform 0.6s ease-in-out; 
+    backface-visibility: hidden; 
+  }
+  
+  .back-image {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .front-image {
+    transform: rotateY(180deg); 
+  }
+  
+  .card:hover .back-image {
+    transform: rotateY(0); 
+  }
+  
+  .card-body {
+    position: relative;
+  }
+  .card:hover {
+    box-shadow: 0 0 15px 5px #de57c85c; 
+  }
+
+  #comprar{
+    background-color: #BE57DE;
+    border:0px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: "fran";
+  }
+  #comprar:hover{
+    background-color: #b83dde;
+  }
+
+  .comprar2{
+    background-color: #BE57DE !important;
+    border:0px solid white !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    font-family: "fran" !important;
+  }
+  .comprar2:hover{
+    background-color: #b83dde !important;
+  }
+
+  #precio{
+    color: #DE5776;
+    font-weight: bold;
+  }
+
+  .card-title{
+    font-family: "fran";
+  }
+
+  .card-text{
+    font-family: "fran";
+  }
+  h3{
+    font-family: "fran";
+  }
+
+  .copy{
+    font-family: "fran";
+    font-size: 14px;
+  }
+  .carousel-item img {
+    object-fit: cover; 
+    height: 30vh;
+}
+  #carouselExampleIndicators {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover; 
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(60%) saturate(700%) hue-rotate(290deg) brightness(110%) contrast(95%);
+}
+.carousel-caption {
+  position: absolute;
+  left: 0 !important;
+  right: 68% !important;
+  transform: translateY(-50%);
+}
+.carousel-indicators button {
+  background-color: #DE57C7 !important; 
+}
+
+.carousel-indicators .active {
+  background-color: #DE57C7 !important;
+
+}
+
+#cajon{
+  border: 4px solid #DE57C7;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+#cajon img {
+  margin-top: -19px;  
+  margin-left: -12px ;
+}
+
+.anuncio{
+  font-size: 50px;
+  font-family: "lovely";
+}
+
+.anuncios{
+  font-size: 25px;
+}
+
+.carousel-container {
+  background-color: #FBFBFB; 
+  border: 4px solid  #DE57C7;
+  padding: 15px; 
+  border-radius: 10px;
+}
+
+#carrusel2,
+#carrusel2 {
+  width: 3% !important;
+}
+
+
+
+.recortar-imagen {
+  width: 100%;
+  height: auto;
+  clip-path: inset(-1.88% 0px -0.63% 0px); 
+}
+
+#producto{
+  background-color: #FBFBFB; 
+  border: 2px solid  #DE57C7;
+  padding: 15px; 
+  border-radius: 10px;
+}
+
+#titulopro{
+  font-family: "fran";
+}
